@@ -42,6 +42,8 @@ public interface HarnessConnector extends AutoCloseable {
 
     default boolean supportsModelSelection() { return false; }
 
+    default boolean supportsUserMessageQueue() { return false; }
+
     default boolean supportsContextCompression() { return false; }
 
     @FunctionalInterface
